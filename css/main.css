@@ -102,6 +102,11 @@ textarea {
     padding: 0.2em 0;
 }
 
+.verticalAlign{
+    display: inline-block;
+    vertical-align: middle;
+}
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -111,6 +116,7 @@ textarea {
     margin: 0 auto;
     text-align: center;
     padding-top: 100px;
+    max-height: 80%;
 }
 
 .middle-picture{
@@ -165,12 +171,48 @@ textarea {
     max-width: 80px;
 }
 
-.verticalAlign{
-    display: inline-block;
-    vertical-align: middle;
+/* ==========================================================================
+   NavBar
+   ========================================================================== */
+.fillSpace{
+    min-height: 5%;
 }
 
-/*Slide Backgrounds and Colors*/
+header{
+    z-index:10;
+}
+
+.navbar ul{
+    padding-left: 0;
+}
+
+.navbar ul li{
+    text-decoration:  none;
+    display: inline;
+    color: #c2d2e9;
+    font-family: Castor, sans-serif;
+    font-size: 24px;
+    padding: 0 20px;
+}
+
+.navbar ul li a{
+    text-decoration:  none;
+    display: inline;
+    color: #c2d2e9;
+    font-family: Castor, sans-serif;
+    font-size: 24px;
+    padding: 0 20px;
+}
+
+.navbar ul li img{
+    max-width: 60px;
+}
+
+
+
+/* ==========================================================================
+   Slide Backgrounds and Styles
+   ========================================================================== */
 .slides{
     overflow: hidden;
     width: 100%;
@@ -186,13 +228,33 @@ textarea {
 }
 
 .bkg1 {
-    background-color: rgba(35, 100, 103, 1.0);
+    background-color: rgb(35, 100, 103);
     background-attachment: fixed;
+    text-align: center;
 }
 
 .bkg2 {
-    background-color: black;
+    background-color: #000d0e;
     background-attachment: fixed;
+    text-align: center;
+}
+
+.bkg3 {
+    background-color: #2d8633;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.bkg4 {
+    background-color: #000d0e;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.bkg5 {
+    background-color: #996633;
+    background-attachment: fixed;
+    text-align: center;
 }
 
 
