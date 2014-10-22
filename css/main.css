@@ -7,6 +7,15 @@
  */
 
 /* ==========================================================================
+   Fonts
+   ========================================================================== */
+
+@font-face {
+    font-family: Castor;
+    src: url(fonts/CASTOR__.ttf);
+}
+
+/* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
 
@@ -97,9 +106,94 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.slide1content{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+}
 
+.middle-picture{
+    width: 100%;
+}
 
+.mainimg{
+    max-width: 300px;
+}
 
+.slide1content h2{
+    font-size: 60px;
+    color: #c9d2e9;
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-family: Castor, sans-serif;
+}
+
+.mainrule{
+    width: 40%;
+    margin: 25px auto;
+    border-top: 5px solid #c2d2e9;
+}
+
+.contactMeButton{
+    border: solid 3px #c2d2e9;
+    max-width: 300px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.contactMeButton a{
+    text-decoration: none;
+    color: #c2d2e9;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Castor, sans-serif;
+}
+
+.slide1content ul{
+    padding-left: 0;
+    margin-top: 30px;
+}
+
+.slide1content ul li{
+    text-decoration: none;
+    display: inline;
+    padding: 0 10px 0 10px;
+}
+
+.slide1content ul li img{
+    max-width: 80px;
+}
+
+.verticalAlign{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*Slide Backgrounds and Colors*/
+.slides{
+    overflow: hidden;
+    width: 100%;
+}
+
+.bkg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.bkg1 {
+    background-color: rgba(35, 100, 103, 1.0);
+    background-attachment: fixed;
+}
+
+.bkg2 {
+    background-color: black;
+    background-attachment: fixed;
+}
 
 
 

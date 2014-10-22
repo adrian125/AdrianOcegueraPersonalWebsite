@@ -17,17 +17,73 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+
+        <section id="slide1" class="slides">
+            <div class="bkg bkg1">
+                <div class="slide1content">
+                    <div class="middle-picture">
+                        <img src="img/mainpic.png" class="mainimg">
+                    </div>
+                    <h2>Software Developer / Musician</h2>
+                    <div class="maingpagerule">
+                        <hr align="center" class="mainrule">
+                    </div>
+                    <div class="contactMeButton">
+                        <a href="mailto:ocegueraadrian@gmail.com"> <span class="verticalAlign"><img src="img/gmail2.png"  style="max-width:60px;" alt="Contact Me"/>CONTACT ME</span></a>
+                    </div>
+
+
+                    <ul>
+                        <li><img src="img/linkedin.png"></li>
+                        <li><img src="img/facebook.png"></li>
+                        <li><img src="img/twitter.png"></li>
+                        <li><img src="img/instagram.png"></li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </section>
+
+    <!--    <section id="slide2" class="slides">
+            <div class="bkg bkg2" data-800="background-position: 0px 0px;" data-1480="background-position: 0px -500px;">
+
+            </div>
+        </section>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
+        <!--skrollr include and initiation.-->
+        <script type="text/javascript" src="js/skrollr/skrollr.min.js"></script>
+        <script type="text/javascript">
+            var s = skrollr.init({
+                forceHeight: false,
+            smoothScrolling: true
+            });
+
+            var winY = $(window).height();
+            var winX = $(window).width();
+            $('section').height (winY);
+            /*$('p#hi').css({position: 'relative', top: winY/2+150+'px', left: winX/2})*/
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
